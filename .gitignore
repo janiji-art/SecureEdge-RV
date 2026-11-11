@@ -15,3 +15,13 @@ synth/alu_statistics.txt
 
 # Temporary files
 *.tmp
+
+# Simulation executables
+alu_sim
+
+# Backup files
+*_backup.v
+
+# Temporary files
+.DS_Store
+*.tmp
