@@ -1,0 +1,33 @@
+VCD info: dumpfile alu.vcd opened for output.
+--------------------------------
+       32-BIT ALU TEST
+--------------------------------
+PASS: ADD | Result = 0000000f
+PASS: SUB | Result = 00000005
+PASS: AND | Result = 00000000
+PASS: OR | Result = 0000000f
+PASS: XOR | Result = 0000000f
+PASS: SLL | Result = 00000100
+PASS: SRL | Result = 08000001
+PASS: SRA | Result = f8000001
+PASS: SLT | Result = 00000001
+PASS: SLTU | Result = 00000001
+
+--- EDGE CASE TESTING ---
+PASS: ADD OVERFLOW | Result = 00000000
+PASS: SUB NEGATIVE | Result = fffffffb
+PASS: SLT NEGATIVE | Result = 00000001
+PASS: SLTU UNSIGNED | Result = 00000000
+PASS: SLL SHIFT 0 | Result = 80000001
+PASS: SLL SHIFT 31 | Result = 80000000
+PASS: SRL SHIFT 31 | Result = 00000001
+PASS: SRA SHIFT 31 | Result = ffffffff
+PASS: INVALID CONTROL | Result = 00000000
+PASS: ZERO FLAG = 1
+PASS: ZERO FLAG = 0
+--------------------------------
+TOTAL PASSED : 21
+TOTAL FAILED : 0
+--------------------------------
+ALL TESTS PASSED!
+tb/alu_tb.v:174: $finish called at 210000 (1ps)

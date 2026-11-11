@@ -25,3 +25,7 @@ alu_sim
 # Temporary files
 .DS_Store
 *.tmp
+# Additional ALU simulation executables
+alu_final_test
+alu_gate_test
+alu_zero_tree_test
