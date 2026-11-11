@@ -1,0 +1,17 @@
+# macOS
+.DS_Store
+
+# Simulation outputs
+*.vcd
+*.vvp
+*.out
+alu_test
+alu_synth_test
+
+# Generated synthesis files
+synth/alu_netlist.v
+synth/*.log
+synth/alu_statistics.txt
+
+# Temporary files
+*.tmp
